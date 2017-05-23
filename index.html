@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Routing</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="header">
+		<ul class="nav nav-tabs">
+			<li class="navigator" onclick="navigate('Home',this)">
+				<a>Home</a>
+			</li>
+			<li class="navigator" onclick="navigate('View',this)">
+				<a>View</a>
+			</li>
+			<li class="navigator" onclick="navigate('Edit',this)">
+				<a>Edit</a>
+			</li>
+		</ul>
+		<router-outlet></router-outlet>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
